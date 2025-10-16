@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: white;
+color: black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+.container{
+ width: 70%;
+ margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 100px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+.text-input {
+  padding: 20px;
+  display: flex;
+  position: relative;
+  color: black;
+}
+
+.from-text {
+  border-right: none;
+  transition: border 0.3s ease;
+}
+
+
+.text-input .from-text,
+.text-input:focus-within .from-text {
+  border-right: 2px solid gray;
+}
+
+textarea {
+  height: 300px;
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.left-icon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.center-controls {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.center-controls select{
+  color: black;
+  background-color: white;
+  padding: 7px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.icons i,
+.center-controls i {
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.exchange {
+  background-color: rgb(195, 192, 192);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+.exchange:hover{
+  background-color: white;
+}
+.btn{
+  background-color:black ;
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  transition: 1s ease-in;
+}
+.btn:hover{
+  background-color:rgb(10, 10, 10) ;
+  border: 2px solid rgb(172, 161, 161);
+}
+textarea {
+  resize: none;
+}
